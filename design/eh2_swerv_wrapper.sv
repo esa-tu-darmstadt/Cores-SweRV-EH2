@@ -20,9 +20,11 @@
 // Comments:
 //
 //********************************************************************************
-module eh2_swerv_wrapper
+`include "eh2_pdef.vh"
 import eh2_pkg::*;
+module eh2_swerv_wrapper
 #(
+`include "common_defines.vh"
 `include "eh2_param.vh"
 ) (
    input logic                       clk,
