@@ -16,7 +16,7 @@
 //********************************************************************************
 
 // purpose of this file is to convert 16b RISCV compressed instruction into 32b equivalent
-
+`include "eh2_pdef.vh"
 module eh2_ifu_compress_ctl
 import eh2_pkg::*;
   (

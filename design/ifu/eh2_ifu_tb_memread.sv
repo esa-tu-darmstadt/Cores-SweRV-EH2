@@ -14,7 +14,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_ifu_tb_memread;
 
    logic [15:0] compressed [0:128000]; // vector of compressed instructions

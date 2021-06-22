@@ -19,7 +19,7 @@
 // Function: Programmable Interrupt Controller
 // Comments:
 //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_pic_ctrl
 import eh2_pkg::*;
 #(

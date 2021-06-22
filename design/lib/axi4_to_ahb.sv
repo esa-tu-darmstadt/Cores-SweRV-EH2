@@ -21,6 +21,7 @@
 // Comments:
 //
 //********************************************************************************
+`include "eh2_pdef.vh"
 module axi4_to_ahb
 import eh2_pkg::*;
 #(parameter TAG  = 1,

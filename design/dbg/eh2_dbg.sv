@@ -21,6 +21,7 @@
 //           And then Resume the core to do the normal mode
 // Author  :
 //********************************************************************************
+`include "eh2_pdef.vh"
 module eh2_dbg #(
 `include "eh2_param.vh"
  )(

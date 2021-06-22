@@ -20,7 +20,7 @@
 // Function: Icache , iccm  control
 // BFF -> F1 -> F2 -> A
 //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_ifu_mem_ctl
 import eh2_pkg::*;
 #(

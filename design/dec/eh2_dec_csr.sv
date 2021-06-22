@@ -21,7 +21,7 @@
 // Function: CSR decodes
 //********************************************************************************
 
-
+`include "eh2_pdef.vh"
 module eh2_dec_csr
 import eh2_pkg::*;
 #(

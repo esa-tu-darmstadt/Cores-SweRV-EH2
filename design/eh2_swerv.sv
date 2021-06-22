@@ -20,7 +20,7 @@
 // Comments:
 //
 //********************************************************************************
-// `include "eh2_pdef.vh"
+`include "eh2_pdef.vh"
 module eh2_swerv
 import eh2_pkg::*;
 #(

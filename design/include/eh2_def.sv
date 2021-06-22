@@ -1,6 +1,6 @@
 //`ifndef  EH2_DEF_SV
 //`define  EH2_DEF_SV
-
+`include "eh2_pdef.vh"
 package eh2_pkg;
 // performance monitor stuff
 typedef struct packed {

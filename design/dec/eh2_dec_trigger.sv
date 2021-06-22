@@ -22,6 +22,7 @@
 // Comments:
 //
 //********************************************************************************
+`include "eh2_pdef.vh"
 module eh2_dec_trigger
 import eh2_pkg::*;
 #(

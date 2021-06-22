@@ -25,7 +25,7 @@
 // DC1 -> DC2 -> DC3 -> DC4 (Commit)
 //
 // //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_lsu_dccm_ctl
 import eh2_pkg::*;
 #(

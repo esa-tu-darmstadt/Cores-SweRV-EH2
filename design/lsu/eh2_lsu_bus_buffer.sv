@@ -22,7 +22,7 @@
 // Comments:
 //
 //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_lsu_bus_buffer
 import eh2_pkg::*;
 #(

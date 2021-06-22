@@ -18,7 +18,7 @@
 // Function: Top level file for Icache, Fetch, Branch prediction & Aligner
 // BFF -> F1 -> F2 -> A
 //********************************************************************************
-
+`include "eh2_pdef.vh"
 module eh2_ifu
 import eh2_pkg::*;
 #(

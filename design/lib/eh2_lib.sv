@@ -1,3 +1,4 @@
+`include "eh2_pdef.vh"
 module eh2_btb_tag_hash #(
 `include "eh2_param.vh"
  ) (

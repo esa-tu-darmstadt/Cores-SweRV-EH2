@@ -14,7 +14,7 @@
 // limitations under the License.
 
 // all flops call the rvdff flop
-
+`include "eh2_pdef.vh"
 
 module rvdff #( parameter WIDTH=1 )
    (
@@ -1215,7 +1215,7 @@ module rvecc_decode_64  (
 
  endmodule // rvecc_decode_64
 
-module `TEC_RV_ICG (
+module TEC_RV_ICG (
    input logic SE, EN, CK,
    output Q
    );
@@ -1249,7 +1249,7 @@ module rvclkhdr
    logic   SE;
    assign       SE = 0;
 
-   `TEC_RV_ICG clkhdr ( .*, .EN(en), .CK(clk), .Q(l1clk));
+   TEC_RV_ICG clkhdr ( .*, .EN(en), .CK(clk), .Q(l1clk));
 
 endmodule // rvclkhdr
 `endif
@@ -1268,7 +1268,7 @@ module rvoclkhdr
 `ifdef RV_FPGA_OPTIMIZE
    assign l1clk = clk;
 `else
-   `TEC_RV_ICG clkhdr ( .*, .EN(en), .CK(clk), .Q(l1clk));
+   TEC_RV_ICG clkhdr ( .*, .EN(en), .CK(clk), .Q(l1clk));
 `endif
 
 endmodule

@@ -25,7 +25,7 @@
 // DC1 -> DC2 -> DC3 -> DC4 (Commit)
 //
 // //********************************************************************************
-
+`include "eh2_pdef.vh"
 
 `define EH2_LOCAL_DCCM_RAM_TEST_PORTS    .TEST1(dccm_ext_in_pkt[i].TEST1),                      \
                                      .RME(dccm_ext_in_pkt[i].RME),                      \
