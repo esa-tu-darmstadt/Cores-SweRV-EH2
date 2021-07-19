@@ -279,8 +279,14 @@ module eh2_dbg #(
    // end clocking section
 
    // Reset logic
-   assign dbg_dm_rst_l = dbg_rst_l & (dmcontrol_reg[0] | scan_mode);
-   assign dbg_core_rst_l = ~dmcontrol_reg[1] | scan_mode;
+   // original:
+   // assign dbg_dm_rst_l = dbg_rst_l & (dmcontrol_reg[0] | scan_mode);
+   // assign dbg_core_rst_l = ~dmcontrol_reg[1] | scan_mode;
+   // Hacky Hotfix: disable debug reset
+   assign dbg_dm_rst_l = 1'b0;
+   assign dbg_core_rst_l = 1'b1;
+
+
 
    // synchronize the rst
    rvsyncss #(1) rstl_syncff (.din(rst_l), .dout(rst_l_sync), .clk(free_clk), .rst_l(dbg_rst_l));
